@@ -1,0 +1,38 @@
+<!-- app.component.html -->
+<div class="app-container">
+  <!-- Barra de navegación superior -->
+  <header class="navbar">
+    <h1>Sistema de recursos comunitarios</h1>
+    <nav>
+      <ul>
+        <li><a routerLink="/usuarios" routerLinkActive="active">Usuarios</a></li>
+        <li><a routerLink="/instalaciones" routerLinkActive="active">Instalaciones</a></li>
+        <li><a routerLink="/herramientas" routerLinkActive="active">Herramientas</a></li>
+        <li><a routerLink="/reservas" routerLinkActive="active">Reservas</a></li>
+        <li><a routerLink="/historial" routerLinkActive="active">Historial</a></li>
+        <li><a routerLink="/reportes" routerLinkActive="active">Reportes</a></li>
+      </ul>
+      
+    </nav>
+  </header>
+
+  <!-- Contenedor con el menú lateral y el contenido principal -->
+  <div class="main-content">
+    <aside class="sidebar">
+      <!-- Menú lateral (opciones adicionales) -->
+      <h3>Menú Lateral</h3>
+      <ul>
+        <li><a routerLink="/usuarios">Usuarios</a></li>
+        <li><a routerLink="/instalaciones">Instalaciones</a></li>
+        <li><a routerLink="/reservas">Reservas</a></li>
+        <li><a routerLink="/reportes">Reportes</a></li>
+        <li><a rotuterLink="/historial">historial</a></li>
+      </ul>
+    </aside>
+
+    <!-- Área de contenido donde se renderizarán las vistas -->
+    <main class="content">
+      <router-outlet></router-outlet> <!-- Aquí se cargarán los componentes según la ruta -->
+    </main>
+  </div>
+</div>

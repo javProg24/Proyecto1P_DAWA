@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "nombre": "Juan Pérez",
+      "correo": "juan@gmail.com",
+      "direccion": "Calle Principal #123",
+      "telefono": "0999999999"
+    },
+    {
+      "id": 2,
+      "nombre": "María Gómez",
+      "correo": "maria@gmail.com",
+      "direccion": "Av. Secundaria #456",
+      "telefono": "0988888888"
+    }
+  ]
+  

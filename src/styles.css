@@ -1,0 +1,69 @@
+/* app.component.css */
+.active {
+  font-weight: bold;
+  color: blue;
+  text-decoration: underline;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+  }
+  
+  .navbar nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .navbar nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar nav ul li a.active {
+    font-weight: bold;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 10px 0;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
