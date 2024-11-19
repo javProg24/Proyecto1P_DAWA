@@ -1,3 +1,4 @@
+
 <!-- app.component.html -->
   <!-- Barra de navegación superior -->
   <header class="navbar">
@@ -22,23 +23,6 @@
         </ul>
       </nav>
   </header>
-  <main class="main-content">
-    <!-- Sección de bienvenida -->
-    <section class="bienvenida">
-      <h2>¡Bienvenido!</h2>
-      <p>
-        Este es un sistema que permite a una comunidad o barrio gestionar
-        recursos compartidos
-      </p>
-    </section>
-    
-  <!-- Sección de tarjetas -->
-  <section class="cards">
-    <mat-card *ngFor="let item of menuItems" class="card">
-      <!-- <mat-icon class="icon">{{ item.icon }}</mat-icon> -->
-      <img mat-card-image [src]="item.icon" alt="Icono" width="100px">
-      <h3>{{ item.title }}</h3>
-      <button mat-raised-button [routerLink]="item.routerLink" [routerLinkActive]="item.routerLinkActive">{{ item.buttonText }}</button>
-    </mat-card>
-  </section>
-  </main>
+
+
+  <router-outlet></router-outlet>

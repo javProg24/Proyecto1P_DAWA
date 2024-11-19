@@ -11,7 +11,7 @@ import { QueEsEsteSistemaComponent } from './components/que-es-este-sistema/que-
 import { SobreNosotrosComponent } from './components/sobre-nosotros/sobre-nosotros.component';
 export const routes: Routes = [
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
-  {path: 'inicio', component: AppComponent},
+  {path: 'inicio', component: InicioServiciosComponent},
   // { path: 'inicio-servicios', component: InicioServiciosComponent },
   { path: "que-es-este-sistema",component:QueEsEsteSistemaComponent },
   { path: "sobre-nosotros",component: SobreNosotrosComponent},
