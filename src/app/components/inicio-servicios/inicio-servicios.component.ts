@@ -8,8 +8,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-inicio-servicios',
   standalone: true,
-  imports: [MatButtonModule,MatIconModule,MatCardModule,RouterModule,RouterOutlet
-  ],
+  imports: [MatButtonModule,MatIconModule,MatCardModule,RouterModule,],
   templateUrl: './inicio-servicios.component.html',
   styleUrl: './inicio-servicios.component.css'
 })
