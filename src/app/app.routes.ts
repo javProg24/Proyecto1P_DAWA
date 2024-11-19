@@ -21,5 +21,4 @@ export const routes: Routes = [
   { path: 'reservas', component: ReservasComponent },
   { path: 'historial', component: HistorialComponent },
   { path: 'reportes', component: ReportesComponent },
-  
 ];

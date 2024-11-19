@@ -22,5 +22,4 @@ export class AppComponent {
   isHomeActive():boolean{
     return this.router.url === '/home'
   }
-  
 }
