@@ -5,13 +5,15 @@ import { HerramientasComponent } from './components/herramientas/herramientas.co
 import { ReservasComponent } from './components/reservas/reservas.component';
 import { HistorialComponent } from './components/historial/historial.component';
 import { ReportesComponent } from './components/reportes/reportes.component';
-
+import { InicioServiciosComponent } from './components/inicio-servicios/inicio-servicios.component';
 export const routes: Routes = [
-    { path: '', redirectTo: '/usuarios', pathMatch: 'full' },
-  { path: 'usuarios', component: UsuariosComponent },
+    { path: '', redirectTo: '/inicio-servicios', pathMatch: 'full' },
+    { path: 'inicio-servicios', component: InicioServiciosComponent },
+    { path: 'usuarios', component: UsuariosComponent },
   { path: 'instalaciones', component: InstalacionesComponent },
   { path: 'herramientas', component: HerramientasComponent },
   { path: 'reservas', component: ReservasComponent },
   { path: 'historial', component: HistorialComponent },
   { path: 'reportes', component: ReportesComponent },
+  
 ];
