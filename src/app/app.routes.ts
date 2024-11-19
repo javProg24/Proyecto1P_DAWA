@@ -6,10 +6,16 @@ import { ReservasComponent } from './components/reservas/reservas.component';
 import { HistorialComponent } from './components/historial/historial.component';
 import { ReportesComponent } from './components/reportes/reportes.component';
 import { InicioServiciosComponent } from './components/inicio-servicios/inicio-servicios.component';
+import { AppComponent } from './app.component';
+import { QueEsEsteSistemaComponent } from './components/que-es-este-sistema/que-es-este-sistema.component';
+import { SobreNosotrosComponent } from './components/sobre-nosotros/sobre-nosotros.component';
 export const routes: Routes = [
-    { path: '', redirectTo: '/inicio-servicios', pathMatch: 'full' },
-    { path: 'inicio-servicios', component: InicioServiciosComponent },
-    { path: 'usuarios', component: UsuariosComponent },
+  { path: '', redirectTo: '/inicio', pathMatch: 'full' },
+  {path: 'inicio', component: AppComponent},
+  // { path: 'inicio-servicios', component: InicioServiciosComponent },
+  { path: "que-es-este-sistema",component:QueEsEsteSistemaComponent },
+  { path: "sobre-nosotros",component: SobreNosotrosComponent},
+  { path: 'usuarios', component: UsuariosComponent },
   { path: 'instalaciones', component: InstalacionesComponent },
   { path: 'herramientas', component: HerramientasComponent },
   { path: 'reservas', component: ReservasComponent },
