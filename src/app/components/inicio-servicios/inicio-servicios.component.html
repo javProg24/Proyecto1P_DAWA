@@ -1,3 +1,24 @@
+<!-- Sección de tarjetas -->
+<main class="main-content">
+    <!-- Sección de bienvenida -->
+    <section class="bienvenida">
+    <h2>¡Bienvenido!</h2>
+    <p>
+        Este es un sistema que permite a una comunidad o barrio gestionar
+        recursos compartidos
+    </p>
+</section>
+
+<!-- Sección de tarjetas -->
+<section class="cards">
+    <mat-card *ngFor="let item of menuItems" class="card">
+    <!-- <mat-icon class="icon">{{ item.icon }}</mat-icon> -->
+        <img mat-card-image [src]="item.icon" alt="Icono" width="100px">
+        <h3>{{ item.title }}</h3>
+        <button mat-raised-button [routerLink]="item.routerLink" routerLinkActive="active">{{ item.buttonText }}</button>
+</mat-card>
+</section>
+</main>
 <!-- <div class="inicio-class">
     <div class="bienvenida-class">
         <h1>Bienvenido</h1>
@@ -36,25 +57,3 @@
         </mat-card>
     </div>
 </div> -->
-<!-- Sección de tarjetas -->
-<main class="main-content">
-    <!-- Sección de bienvenida -->
-    <section class="bienvenida">
-    <h2>¡Bienvenido!</h2>
-    <p>
-        Este es un sistema que permite a una comunidad o barrio gestionar
-        recursos compartidos
-    </p>
-</section>
-
-<!-- Sección de tarjetas -->
-<section class="cards">
-    <mat-card *ngFor="let item of menuItems" class="card">
-    <!-- <mat-icon class="icon">{{ item.icon }}</mat-icon> -->
-        <img mat-card-image [src]="item.icon" alt="Icono" width="100px">
-        <h3>{{ item.title }}</h3>
-        <button mat-raised-button [routerLink]="item.routerLink" routerLinkActive="active">{{ item.buttonText }}</button>
-</mat-card>
-</section>
-</main>
-
