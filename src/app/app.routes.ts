@@ -5,9 +5,15 @@ import { HerramientasComponent } from './components/herramientas/herramientas.co
 import { ReservasComponent } from './components/reservas/reservas.component';
 import { HistorialComponent } from './components/historial/historial.component';
 import { ReportesComponent } from './components/reportes/reportes.component';
+import { AppComponent } from './app.component';
+import { QueEsEsteSistemaComponent } from './components/que-es-este-sistema/que-es-este-sistema.component';
+import { SobreNosotrosComponent } from './components/sobre-nosotros/sobre-nosotros.component';
 
 export const routes: Routes = [
-    { path: '', redirectTo: '/usuarios', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirigir a /home por defecto
+  { path: 'home', component: AppComponent }, // Página principal
+  { path: 'que-es-este-sistema', component: QueEsEsteSistemaComponent }, // Página ¿Qué es este sistema?
+  { path: 'sobre-nosotros', component: SobreNosotrosComponent }, // Página sobre nosotros
   { path: 'usuarios', component: UsuariosComponent },
   { path: 'instalaciones', component: InstalacionesComponent },
   { path: 'herramientas', component: HerramientasComponent },
