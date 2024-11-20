@@ -1,0 +1,50 @@
+[
+    {
+        "id":1,
+        "nombre": "Javier",
+        "apellido": "Tomala Gonzalez",
+        "foto": "../image/Tomala.jpeg",
+        "telefono": 967182694,
+        "link": "https://github.com/javProg24"
+    },
+    {
+        "id":2,
+        "nombre": "Pedro", 
+        "apellido":"Aviles", 
+        "foto": "../image/Aviles.png", 
+        "link": "https://github.com/Peter16Xo", 
+        "numero": 946593534
+    },
+    {
+        "id":3,
+        "nombre": "Jean",
+        "apellido":"Romero", 
+        "foto": "../image/Romero.jpeg", 
+        "link": "https://github.com/JMarco20", 
+        "numero": 954456734
+    },
+    {
+        "id":4,
+        "nombre": "Marcos",
+        "apellido": "Falconni", 
+        "foto": "../image/Falconni.jpeg", 
+        "link": "https://github.com/FalconMarc", 
+        "numero": 945643578
+    },
+    {
+        "id":5,
+        "nombre": "Steven", 
+        "apellido": "Falquez", 
+        "foto": "../image/Falquez.png", 
+        "link": "https://github.com/ING-DAVID-777",
+        "numero": 945678534
+    },
+    {
+        "id":6,
+        "nombre": "Desconocido", 
+        "apellido": "", 
+        "foto": "../image/default.png", 
+        "link": "#",  
+        "numero": 906330537
+    }
+]

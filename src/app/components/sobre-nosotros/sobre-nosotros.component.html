@@ -1,1 +1,28 @@
 <p>sobre-nosotros works!</p>
+<main class="main-content">
+    <section class="cards-present">
+        <mat-card *ngFor="let perfil of integrantes; let indice=index" 
+        class="card" appearance="outlined">
+            <mat-card-header>
+                <mat-card-title>
+                    <strong>{{perfil.nombre|uppercase}}</strong>
+                </mat-card-title>
+            </mat-card-header>
+            <img *ngIf="perfil.foto; else defaultImage" 
+                mat-card-image 
+                [src]="perfil.foto" 
+                [alt]="perfil.nombre + ' ' + perfil.apellido">
+                <ng-template #defaultImage>
+                    <img mat-card-image 
+                        src="assets/image/default.png" 
+                        [alt]="perfil.nombre + ' ' + perfil.apellido">
+                </ng-template>
+            <mat-card-actions>
+                <button mat-flat-button class="btnVer" (click)="verPerfil(perfil)">
+                    <mat-icon>view</mat-icon>
+                    Ver perfil
+                </button>
+            </mat-card-actions>
+        </mat-card>
+    </section>
+</main>

@@ -17,7 +17,7 @@ describe('AppComponent', () => {
   it(`should have the 'sistema-recursos-comunitarios' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('sistema-recursos-comunitarios');
+    expect(app.isHomeActive).toEqual('sistema-recursos-comunitarios');
   });
 
   it('should render title', () => {
