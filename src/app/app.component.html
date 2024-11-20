@@ -20,6 +20,8 @@
 
 <!-- Contenido principal -->
 <main class="main-content">
+  <router-outlet></router-outlet> <!-- Aquí se cargarán las páginas correspondientes -->
+
   <!-- Sección de bienvenida -->
   <section class="bienvenida">
     <h2>¡Bienvenido!</h2>
@@ -36,5 +38,7 @@
     <h3>{{ item.title }}</h3>
     <button mat-raised-button color="primary" [routerLink]="item.route">{{ item.buttonText }}</button>
   </mat-card>
+
+
 </section>
 </main>
