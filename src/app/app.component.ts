@@ -12,7 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule, RouterOutlet, RouterModule , MatCardModule, MatTableModule, MatToolbar, MatSidenav, MatNavList, MatSidenavContainer, MatSidenavContent, MatIcon ],
+  imports: [ CommonModule, MatButtonModule, MatIconModule, RouterOutlet, RouterModule , MatCardModule, MatTableModule, MatToolbar, MatSidenav, MatNavList, MatSidenavContainer, MatSidenavContent, MatIcon ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

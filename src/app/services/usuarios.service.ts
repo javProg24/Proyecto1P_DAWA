@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { Usuario } from '../models/usuarios.model';
 
 @Injectable({
@@ -11,7 +11,22 @@ export class UsuariosService {
 
   constructor(private http: HttpClient) {}
 
-  getUsuarios(): Observable<Usuario[]> {
-    return this.http.get<Usuario[]>(this.url);
-  }
+// Obtener lista de usuarios
+getUsuarios(): Observable<Usuario[]> {
+  return this.http.get<Usuario[]>(this.url);
+}
+
+agregarUsuario(usuario: Usuario): Observable<Usuario> {
+  usuario.id = Date.now(); // Generar ID único
+  return of(usuario); // Retornar usuario creado
+}
+
+actualizarUsuario(usuario: Usuario): Observable<Usuario> {
+  return of(usuario); // Simular actualización del usuario
+}
+
+// Eliminar un usuario (simulado)
+eliminarUsuario(id: number): Observable<number> {
+  return of(id);
+}
 }
