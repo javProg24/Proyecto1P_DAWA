@@ -8,11 +8,13 @@ import { ReportesComponent } from './components/reportes/reportes.component';
 import { InicioServiciosComponent } from './components/inicio-servicios/inicio-servicios.component';
 import { QueEsEsteSistemaComponent } from './components/que-es-este-sistema/que-es-este-sistema.component';
 import { SobreNosotrosComponent } from './components/sobre-nosotros/sobre-nosotros.component';
+
 export const routes: Routes = [
-  { path: '', redirectTo: '/inicio', pathMatch: 'full' },
+  { path: '', redirectTo: 'inicio', pathMatch: 'full' },
+  // {path: "**",redirectTo: "inicio" },
   {path: 'inicio', component: InicioServiciosComponent},
   { path: "que-es-este-sistema",component:QueEsEsteSistemaComponent },
-  { path: "sobre-nosotros",component: SobreNosotrosComponent},
+  {path: "sobre-nosotros", component:SobreNosotrosComponent},
   { path: 'usuarios', component: UsuariosComponent },
   { path: 'instalaciones', component: InstalacionesComponent },
   { path: 'herramientas', component: HerramientasComponent },

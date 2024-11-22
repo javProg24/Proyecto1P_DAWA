@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { PerfilesjsonServiceService } from './perfilesjson-service.service';
+import { PerfilesjsonService } from './perfilesjson-service.service';
 
 describe('PerfilesjsonServiceService', () => {
-  let service: PerfilesjsonServiceService;
+  let service: PerfilesjsonService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(PerfilesjsonServiceService);
+    service = TestBed.inject(PerfilesjsonService);
   });
 
   it('should be created', () => {
