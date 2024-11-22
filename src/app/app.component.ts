@@ -16,7 +16,7 @@ import { MatButtonModule } from '@angular/material/button';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // title = 'sistema-recursos-comunitarios';
+  title = 'sistema-recursos-comunitarios';
   constructor(private router: Router){
   }
   isHomeActive():boolean{
