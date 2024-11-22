@@ -8,6 +8,12 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCard, MatCardContent, MatCardTitle } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
 import { UsuarioFormComponent } from '../shared/usuario-form/usuario-form.component';
+import { MatIcon } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatFormField, MatFormFieldModule, MatLabel } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 
 
@@ -16,13 +22,15 @@ import { UsuarioFormComponent } from '../shared/usuario-form/usuario-form.compon
   standalone: true,
   imports: [
     CommonModule,
-    MatDialogModule, // Asegúrate de incluir este módulo
+    MatDialogModule,
     MatTableModule,
     MatCheckboxModule,
     MatCardTitle,
     MatCardContent,
     MatCard,
-    FormsModule
+    FormsModule, MatIcon, MatButtonModule, MatIconModule, MatTooltipModule, MatLabel, MatFormFieldModule,
+    MatInputModule
+    
   ],
   templateUrl: './usuarios.component.html',
   styleUrls: ['./usuarios.component.scss']
